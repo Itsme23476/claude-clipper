@@ -21,7 +21,7 @@ Everything runs on this computer except picking the moments, which is your own r
 python3 ~/.claude/skills/clipper/clipper.py prep "<VIDEO OR LINK>"
 ```
 
-If it says no Whisper model was found, search for an existing `ggml-*.bin` file and pass it as `WHISPER_MODEL=<path>`. Only offer to download one if none exists. It is about 150 MB: `mkdir -p ~/.cache/whisper && curl -L -o ~/.cache/whisper/ggml-base.en.bin https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-base.en.bin` Add `--out <folder>` to choose where it works. The default is `~/Desktop/Clips/<video name>/`.
+If it says no Whisper model was found, search for an existing `ggml-*.bin` file and pass it as `WHISPER_MODEL=<path>`. Only offer to download one if none exists. It is about 150 MB: `mkdir -p ~/.cache/whisper && curl -L -o ~/.cache/whisper/ggml-base.en.bin https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-base.en.bin`. Add `--out <folder>` to choose where it works. The default is `~/Desktop/Clips/<video name>/`.
 
 **2. Pick the moments.** Read all of `transcript.txt`. Each line starts with its time in seconds. Choose the best moments, 30 to 60 seconds each unless the user says otherwise:
 
