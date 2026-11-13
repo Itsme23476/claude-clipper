@@ -27,14 +27,22 @@ The skill must live in `~/.claude/skills/clipper`. Restart Claude Code after ins
 
 ## Use
 
-In Claude Code, type `/clipper` and drag in a long video. You get a ranked list of moments with a score and opening line for each. Tell it which to keep, and it renders them to `~/Desktop/Clips/<video name>/clips/`, with titles and post captions in `post-copy.md`.
+In Claude Code, type `/clipper` and drag in a long video or paste a YouTube link. You get a ranked list of moments with a score and opening line for each, and it asks which style you want. Tell it which clips to keep, and it renders them to `~/Desktop/Clips/<video name>/clips/`, with titles and post captions in `post-copy.md`.
 
 To change anything, just ask: a different highlight colour, no zooms on one clip, a shorter cut.
+
+## Styles
+
+- **Hormozi** (default): a square picture between black bars, with a headline in the top bar for the whole clip. Bold white captions build word by word, punch words land in giant capitals and key words in red script.
+- **Elegant**: full-height video with lower-case captions that build word by word in stepped lines, key words in gold serif, and a title box for the first two seconds.
+- **Classic**: bold outlined capitals with yellow highlight words.
+
+Each style is a small file in `styles/`. Show it a Short whose captions you like and ask it to learn that style, and it saves a new one there that you can pick next time.
 
 It picks a layout for each clip:
 
 - **Screen recording with your face in a corner:** the screen on top and your face underneath.
-- **Talking head:** a vertical crop that finds your face again on each camera change.
+- **Talking head:** a crop that finds the speaker's face again on each camera change and punches in on wide shots.
 - **No face:** the full frame, with bars above and below.
 
 ## Limits

@@ -1,0 +1,23 @@
+{
+ "font": "HelveticaNeue-Bold",
+ "size": 58,
+ "color": "#FFFFFF",
+ "upper": false,
+ "highlight": "#FFFFFF",
+ "highlight_font": "Arial-Black",
+ "highlight_scale": 2.5,
+ "highlight_upper": true,
+ "emphasis_font": "SnellRoundhand-Bold",
+ "emphasis_scale": 2.0,
+ "emphasis_color": "#E5232B",
+ "stroke_width": 0,
+ "shadow": 10,
+ "y": 0.62,
+ "max_words": 5,
+ "line_words": 3,
+ "stagger": 0,
+ "reveal": true,
+ "frame": "square",
+ "hook_font": "HelveticaNeue-Bold",
+ "hook_highlight": "#E5232B"
+}
