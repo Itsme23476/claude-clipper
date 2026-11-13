@@ -1,0 +1,17 @@
+{
+ "font": "HelveticaNeue-Medium",
+ "size": 68,
+ "color": "#FFFFFF",
+ "highlight": "#FDCC4A",
+ "highlight_font": "Didot-Bold",
+ "highlight_scale": 1.6,
+ "stroke_width": 0,
+ "shadow": 14,
+ "y": 0.6,
+ "upper": false,
+ "max_words": 6,
+ "line_words": 3,
+ "stagger": 80,
+ "reveal": true,
+ "hook_highlight": "#CB3E41"
+}
